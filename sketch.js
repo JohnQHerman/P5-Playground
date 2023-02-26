@@ -39,12 +39,12 @@ function draw() {
   for (let [i, lineColor] of lineColors.entries()) {
     let lineSpeed = lineSpeeds[i]; 
     let radius = 200 + i * 50; 
-    let angle = frameCount * lineSpeed; // angle in degrees
+    let angle = frameCount * lineSpeed;
 
     // draw lines
     stroke(lineColor);
     strokeWeight(2);
-    let lineX = radius * sin(angle); // x = r * cos(angle)
+    let lineX = radius * sin(angle);
     let lineY = -radius * cos(angle);
     line(0, 0, lineX, lineY);
 
